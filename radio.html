@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio On Duty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-6">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Radio Status</h1>
+        
+        <div class="space-y-4">
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Radio On Duty</h2>
+                <button onclick="copyText('SAN 0000 has now started duty.')" class="mt-2 px-4 py-2 bg-blue-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is officially on duty.')" class="mt-2 px-4 py-2 bg-blue-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 checking in for duty.')" class="mt-2 px-4 py-2 bg-blue-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is now active on duty.')" class="mt-2 px-4 py-2 bg-blue-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Radio Off Duty</h2>
+                <button onclick="copyText('SAN 0000 is now signing off duty.')" class="mt-2 px-4 py-2 bg-red-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 has completed duty.')" class="mt-2 px-4 py-2 bg-red-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is officially off duty.')" class="mt-2 px-4 py-2 bg-red-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Patroli</h2>
+                <button onclick="copyText('SAN 0000 is heading out for patrol.')" class="mt-2 px-4 py-2 bg-green-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is now patrolling the area.')" class="mt-2 px-4 py-2 bg-green-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is on patrol duty.')" class="mt-2 px-4 py-2 bg-green-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Switch Unit</h2>
+                <button onclick="copyText('SAN 0000 switching from ARIES-1 to ARIES-2.')" class="mt-2 px-4 py-2 bg-yellow-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is now operating under ARIES-2.')" class="mt-2 px-4 py-2 bg-yellow-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Request Teaming Up</h2>
+                <button onclick="copyText('SAN 0000 requesting available unit for partnership.')" class="mt-2 px-4 py-2 bg-purple-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 is looking for a partner unit.')" class="mt-2 px-4 py-2 bg-purple-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Going to Beacon</h2>
+                <button onclick="copyText('SAN 0000 en route to the red beacon with ARIES-1.')" class="mt-2 px-4 py-2 bg-pink-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 heading towards the red beacon.')" class="mt-2 px-4 py-2 bg-pink-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Return Back</h2>
+                <button onclick="copyText('SAN 0000 returning to SANews parking lot with ARIES-1.')" class="mt-2 px-4 py-2 bg-indigo-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 heading back to base with ARIES-1.')" class="mt-2 px-4 py-2 bg-indigo-500 rounded">Copy</button>
+            </div>
+            
+            <div class="p-4 bg-gray-800 rounded-lg">
+                <h2 class="text-xl font-semibold">Disbanded</h2>
+                <button onclick="copyText('SAN 0000 has now disbanded and parked properly.')" class="mt-2 px-4 py-2 bg-gray-500 rounded">Copy</button>
+                <button onclick="copyText('SAN 0000 operations concluded, unit parked.')" class="mt-2 px-4 py-2 bg-gray-500 rounded">Copy</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copied: " + text);
+            });
+        }
+    </script>
+</body>
+</html>
