@@ -9,106 +9,78 @@
 </head>
 <body class="bg-gray-900 text-white p-6 flex items-center justify-center min-h-screen">
     <div class="max-w-4xl w-full">
-        <h1 class="text-3xl font-bold mb-6 text-center">Radio Status</h1>
-                <div class="space-y-6">
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-yellow-400">Radio On Duty</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ is now taking status on duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has started their duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now active on duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has reported in for duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is officially on duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ duty status is now active.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has taken duty status.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now registered on duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has clocked in for duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now operational on duty.')" class="btn">Copy</button>
+        <h1 class="text-4xl font-bold mb-8 text-center text-gray-100">Radio Status</h1>
+        <div class="space-y-8">
+            <!-- Radio On Duty -->
+            <div class="p-8 bg-gray-800 rounded-xl shadow-2xl">
+                <h2 class="text-2xl font-semibold mb-6 text-yellow-400">Radio On Duty</h2>
+                <div class="space-y-4">
+                    <div onclick="copyText('@ is now taking status on duty.')" class="clickable-text">@ is now taking status on duty.</div>
+                    <div onclick="copyText('@ has started their duty.')" class="clickable-text">@ has started their duty.</div>
+                    <div onclick="copyText('@ is now active on duty.')" class="clickable-text">@ is now active on duty.</div>
+                    <div onclick="copyText('@ has reported in for duty.')" class="clickable-text">@ has reported in for duty.</div>
+                    <div onclick="copyText('@ is officially on duty.')" class="clickable-text">@ is officially on duty.</div>
+                    <div onclick="copyText('@ duty status is now active.')" class="clickable-text">@ duty status is now active.</div>
+                    <div onclick="copyText('@ has taken duty status.')" class="clickable-text">@ has taken duty status.</div>
+                    <div onclick="copyText('@ is now registered on duty.')" class="clickable-text">@ is now registered on duty.</div>
+                    <div onclick="copyText('@ has clocked in for duty.')" class="clickable-text">@ has clocked in for duty.</div>
+                    <div onclick="copyText('@ is now operational on duty.')" class="clickable-text">@ is now operational on duty.</div>
                 </div>
             </div>
-            
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-red-400">Radio Off Duty</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ is now taking status off duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has ended their duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now inactive from duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has logged off from duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ duty status is now inactive.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is no longer on active duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ has gone off duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is taking a break from duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now unavailable for duty.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is signing off from duty.')" class="btn">Copy</button>
+
+            <!-- Radio Off Duty -->
+            <div class="p-8 bg-gray-800 rounded-xl shadow-2xl">
+                <h2 class="text-2xl font-semibold mb-6 text-red-400">Radio Off Duty</h2>
+                <div class="space-y-4">
+                    <div onclick="copyText('@ is now taking status off duty.')" class="clickable-text">@ is now taking status off duty.</div>
+                    <div onclick="copyText('@ has ended their duty.')" class="clickable-text">@ has ended their duty.</div>
+                    <div onclick="copyText('@ is now inactive from duty.')" class="clickable-text">@ is now inactive from duty.</div>
+                    <div onclick="copyText('@ has logged off from duty.')" class="clickable-text">@ has logged off from duty.</div>
+                    <div onclick="copyText('@ duty status is now inactive.')" class="clickable-text">@ duty status is now inactive.</div>
+                    <div onclick="copyText('@ is no longer on active duty.')" class="clickable-text">@ is no longer on active duty.</div>
+                    <div onclick="copyText('@ has gone off duty.')" class="clickable-text">@ has gone off duty.</div>
+                    <div onclick="copyText('@ is taking a break from duty.')" class="clickable-text">@ is taking a break from duty.</div>
+                    <div onclick="copyText('@ is now unavailable for duty.')" class="clickable-text">@ is now unavailable for duty.</div>
+                    <div onclick="copyText('@ is signing off from duty.')" class="clickable-text">@ is signing off from duty.</div>
                 </div>
             </div>
-        <div class="space-y-6">
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-yellow-400">Switch Unit</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ switched from ARIES-1 to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ transitioned to ARIES-2 from ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ changed assignment from ARIES-1 to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now operating under ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ switched vehicle from ARIES-1 to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ reassigned from ARIES-1 to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ transferred to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ moved operations to ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is now reporting under ARIES-2.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ reassigned unit from ARIES-1 to ARIES-2.')" class="btn">Copy</button>
+
+            <!-- Switch Unit -->
+            <div class="p-8 bg-gray-800 rounded-xl shadow-2xl">
+                <h2 class="text-2xl font-semibold mb-6 text-blue-400">Switch Unit</h2>
+                <div class="space-y-4">
+                    <div onclick="copyText('@ switched from ARIES-1 to ARIES-2.')" class="clickable-text">@ switched from ARIES-1 to ARIES-2.</div>
+                    <div onclick="copyText('@ transitioned to ARIES-2 from ARIES-1.')" class="clickable-text">@ transitioned to ARIES-2 from ARIES-1.</div>
+                    <div onclick="copyText('@ changed assignment from ARIES-1 to ARIES-2.')" class="clickable-text">@ changed assignment from ARIES-1 to ARIES-2.</div>
+                    <div onclick="copyText('@ is now operating under ARIES-2.')" class="clickable-text">@ is now operating under ARIES-2.</div>
+                    <div onclick="copyText('@ switched vehicle from ARIES-1 to ARIES-2.')" class="clickable-text">@ switched vehicle from ARIES-1 to ARIES-2.</div>
+                    <div onclick="copyText('@ reassigned from ARIES-1 to ARIES-2.')" class="clickable-text">@ reassigned from ARIES-1 to ARIES-2.</div>
+                    <div onclick="copyText('@ transferred to ARIES-2.')" class="clickable-text">@ transferred to ARIES-2.</div>
+                    <div onclick="copyText('@ moved operations to ARIES-2.')" class="clickable-text">@ moved operations to ARIES-2.</div>
+                    <div onclick="copyText('@ is now reporting under ARIES-2.')" class="clickable-text">@ is now reporting under ARIES-2.</div>
+                    <div onclick="copyText('@ reassigned unit from ARIES-1 to ARIES-2.')" class="clickable-text">@ reassigned unit from ARIES-1 to ARIES-2.</div>
                 </div>
             </div>
-            
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-blue-400">Request Teaming Up</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ is requesting a partner.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ seeks an available unit for teaming up.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is looking for a partner to team up.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is searching for a partner unit.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is available for team formation.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ requesting another unit to join.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ needs a partner for joint operations.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ open for partnership with another unit.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is calling for a unit to team up.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ needs a teammate for coverage.')" class="btn">Copy</button>
-                </div>
-            </div>
-            
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-red-400">Going to Beacon</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ is heading to the red beacon with ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ en route to red beacon with ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ proceeding to the designated beacon with ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is making way to the beacon location.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ moving to the beacon area.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is approaching the beacon zone.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ reporting movement towards red beacon.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ navigating to the beacon signal.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ heading to red beacon for coverage.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ relocating to beacon position.')" class="btn">Copy</button>
-                </div>
-            </div>
-            
-            <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold mb-4 text-green-400">Return Back</h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <button onclick="copyText('@ is returning to SANews parking lot with ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ heading back to base with ARIES-1.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ making a return to SANews lot.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ moving back to original station.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ going back to SANews headquarters.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ en route back to parking location.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ wrapping up and heading back.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ retreating back to SANews lot.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ making a safe return.')" class="btn">Copy</button>
-                    <button onclick="copyText('@ is safely heading back to SANews.')" class="btn">Copy</button>
+
+            <!-- Request Teaming Up -->
+            <div class="p-8 bg-gray-800 rounded-xl shadow-2xl">
+                <h2 class="text-2xl font-semibold mb-6 text-purple-400">Request Teaming Up</h2>
+                <div class="space-y-4">
+                    <div onclick="copyText('@ is requesting a partner.')" class="clickable-text">@ is requesting a partner.</div>
+                    <div onclick="copyText('@ seeks an available unit for teaming up.')" class="clickable-text">@ seeks an available unit for teaming up.</div>
+                    <div onclick="copyText('@ is looking for a partner to team up.')" class="clickable-text">@ is looking for a partner to team up.</div>
+                    <div onclick="copyText('@ is searching for a partner unit.')" class="clickable-text">@ is searching for a partner unit.</div>
+                    <div onclick="copyText('@ is available for team formation.')" class="clickable-text">@ is available for team formation.</div>
+                    <div onclick="copyText('@ requesting another unit to join.')" class="clickable-text">@ requesting another unit to join.</div>
+                    <div onclick="copyText('@ needs a partner for joint operations.')" class="clickable-text">@ needs a partner for joint operations.</div>
+                    <div onclick="copyText('@ open for partnership with another unit.')" class="clickable-text">@ open for partnership with another unit.</div>
+                    <div onclick="copyText('@ is calling for a unit to team up.')" class="clickable-text">@ is calling for a unit to team up.</div>
+                    <div onclick="copyText('@ needs a teammate for coverage.')" class="clickable-text">@ needs a teammate for coverage.</div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script>
         function copyText(text) {
             navigator.clipboard.writeText(text).then(() => {
@@ -123,16 +95,15 @@
         }
     </script>
     <style>
-        .btn {
-            padding: 10px;
-            background: #4a90e2;
+        .clickable-text {
+            padding: 12px;
+            background: #374151;
             border-radius: 8px;
-            transition: 0.3s;
-            font-weight: bold;
-            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        .btn:hover {
-            background: #357ABD;
+        .clickable-text:hover {
+            background: #4b5563;
         }
     </style>
 </body>
